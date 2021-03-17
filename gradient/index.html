@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Document</title>
+	<style>
+		*{
+			margin: 0;
+			padding: 0;
+		}
+
+
+		body{
+			background-color: #8e8d8e;
+
+		}
+
+		.container{
+			width: 1280px;
+			height: 710px;
+		
+			background-color: white;
+			margin: 15px auto;
+			
+
+		}
+		.upper-part, .bottom-part{
+			width: 1280px;
+			height: 355px;
+		}
+
+		.upper-part{
+			background-position: bottom right;
+			background-size: 100% 50%, 300px 50%, 500px 50%;
+			background-repeat: no-repeat;
+			background-image: linear-gradient(to top right, #8e8d8e 50%, transparent 50%),
+			linear-gradient(to top left, #8e8d8e 50%, transparent 50%),
+			linear-gradient(to top left, #ff9b00 50%, transparent 50%);
+			                  
+
+
+		}
+
+		.bottom-part{
+			background-position: top left, top right;
+			background-size: 380px 40%, 900px 40%;
+			background-repeat: no-repeat;
+			background-image: linear-gradient(to bottom left, #8e8d8e 50%, transparent 50%),
+			linear-gradient(to bottom right, #8e8d8e 50%, transparent 50%);
+			
+
+		}
+
+		h1{
+			padding: 40px;
+		}
+
+		.lorem{
+			padding-top: 160px;
+			padding-left: 20px;
+			width: 610px;
+			color: white;
+		}
+
+		h2{
+			padding-top: 260px;
+			padding-left: 40px;
+			padding-bottom: 40px;
+		}
+
+
+
+
+
+
+	</style>
+</head>
+
+<body>
+	<div class="container">
+		<div class="upper-part">
+			<h1>Hello Hillel!</h1>
+			<div class="lorem">Lorem ipsum, dolor, sit amet consectetur adipisicing elit. Omnis, odit explicabo. Reprehenderit magnam voluptatem illo repellat nihil, atque commodi vel.</div>
+		</div>
+		<div class="bottom-part">
+			<h2>Complete!</h2>
+		</div>
+	</div>
+</body>
+</html>

@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Шестое занятие</title>
+	<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+	<div class="container">
+		<header>
+			<div class="header-top">
+				<div class="logo1"></div>
+				<h1>Hey, it`s me!</h1>
+				<div class="logo2"></div>
+			</div>
+			<nav>
+				<a href="index.html">Главная</a>
+			    <a href="goals.html">Мои цели</a>
+			    <a href="layout.html">Мои макеты</a>
+			</nav>
+		</header>
+		<section>
+			<div class="information">
+				<aside class="left-bar">
+							<ul>
+						      <li><a href="firstlesson.html">Мое первое занятие</a></li>
+						      <li><a href="secondlesson.html">Мое второе занятие</a></li>
+						      <li><a href="thirdlesson.html">Мое третье занятие</a></li>
+						      <li><a href="fourthlesson.html">Мое четвертое занятие</a></li>
+						      <li><a href="fifthlesson.html">Мое пятое занятие</a></li>
+						      <li><a href="sixthlesson.html">Мое шестое занятие</a></li>
+						      <li><a href="seventhlesson.html">Мое седьмое занятие</a></li>
+						      <li><a href="eighthlesson.html">Мое восьмое занятие</a></li>
+						      <li><a href="ninethlesson.html">Мое девятое занятие</a></li>
+					        </ul>
+						</aside>
+				        <main class="content">
+							<div class="img"></div>
+							<table class="characteristic_css_font">
+								<thead>
+							      <tr>
+								     <th>CSS-свойство</th>
+								     <th>Описание</th>
+								     <th>Примеры свойств</th>
+							      </tr>
+						        </thead>
+						        <tbody>
+						        	<tr>
+						        		<td>Overflow</td>
+						        		<td>Действия с отображением содержимого элемента, которые выступают за его границы</td>
+						        		<td>overflow: hidden(не отображать часть содержимого, которая выступает за пределы элемента); scroll(прокрутка содержимого); visible(отображать все содержимое);</td>
+
+						         	</tr>
+						         	<tr>
+						         		<td>Opacity</td>
+						         		<td>Непрозрачность элемента</td>
+						         		<td>Устанавливають значением от 0(полная прозрачность) до 1(полная непрозрачность</td>
+						         	</tr>
+						         	<tr>
+						         		<td>Float</td>
+						         		<td>Приклеивания к какой либо стороне(не влияет на ширину родителя), строчные элементы воспринимают,а блочные-нет</td>
+						         		<td>float: right/lef/none</td>
+						         	</tr>
+						         	<td>Clear</td>
+						         		<td>Игнорирование поплавка и расположение элемента под ним</td>
+						         		<td>clear: right/lef/none/both</td>
+						         	</tr>
+						        </tbody>
+							 </table>
+					
+			
+				             <h3>Градиент линейный(linear-gradient)</h3>
+				              <ol>
+				            	<li>Устанавливаеться через селектор background-image:</li>
+				            	<li>Далее указываем в скобках направление (to top/bottom/right/left/top right; также можно задавать угол(в градусах(30deg), радианах(1rad), градах, поворотах(1turn(=360deg))</li>
+					            <li>Далее указываем цвета для градиента(green, blue, white); для того что бы цвета сменяли друг друга не равномерно указываем в процентах какой цвет сколько будет занимать(green 20%, blue 30%, white 40%); для резкого перехода необходима указать одинаковые значения для 2 цветов (green 20%, blue 20%, white 40%); transparent - полностью прозрачный цвет </li>
+					            <li>Пример linear-gradient(to top left, #8e8d8e 30%, transparent 40%),
+			                     linear-gradient(30deg, #ff9b00 50%, transparent 50%);</li>
+				              </ol>
+				              <h3>Радиальный градиент(radial-gradient)</h3>
+				              <ol>
+				            	<li>Устанавливаеться через селектор background-image:</li>
+				            	<li>Далее указываеться куда будут направляться лучи(closest-side/corner или farthest-side/corner)</li>
+				            	<li>Далее указываеться форма градиента; по умолчанию ellipse, возможно значенрие circle</li>
+				            	<li>Далее указываем в скобках позиция центра от которого расходяться лучи градиента (at centre/top left/bottom right; также можно задавать координаты центра в px и других подобных единицах(at 50px 40px))</li>
+					            <li>Далее указываем цвета для градиента(green, blue, white); для того что бы цвета сменяли друг друга не равномерно указываем в процентах какой цвет сколько будет занимать(green 20%, blue 30%, white 40%); для резкого перехода необходима указать одинаковые значения для 2 цветов (green 20%, blue 20%, white 40%); transparent - полностью прозрачный цвет </li>
+					            <li>Пример: background-image: radial-gradient(closest-side circle at center, white 70%, transparent 70%, transparent 80%, white 80%, white 90%, transparent 90%);
+                                </li>
+				              </ol>
+				             </main>
+			</div>
+		</section>
+		<footer>AboutMe &copy;</footer>
+	</div>
+</body>
+</html>

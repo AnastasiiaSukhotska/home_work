@@ -1,0 +1,316 @@
+*{
+	margin: 0;
+	padding: 0;
+	font-family: "HelveticaNeue";
+}
+
+
+
+body{
+	background-color: #d1d1d1;
+}
+
+
+header h2{
+	font-size: 42px;
+	line-height: 125px;
+	font-weight: normal;
+
+}
+
+header .container nav{
+	width: 100%;
+	text-align: right;
+	border-bottom: 2px dashed #000;
+	margin-bottom: 60px;
+}
+
+
+
+
+
+nav a{
+	display: inline-block;
+	font-size: 18px;
+	text-transform: uppercase;
+	padding-right: 20px;
+	text-decoration: none;
+	text-align: right;
+	color: #000;
+}
+
+nav a:hover{
+	border-bottom: 2px solid #000;
+	font-weight: bold;
+	padding-bottom: 0;
+	
+}
+
+h1{
+	font-weight: bolder;
+	text-shadow: 3px 5px #d1d1d1;
+	text-transform: uppercase;
+	font-size: 80px;
+
+
+	
+}
+
+.black-line{
+	height: 5px;
+	background-color: #000;
+	margin-top: -10px;
+	overflow: hidden;
+	margin-bottom: 65px;
+	overflow: hidden;
+}
+
+.main-img{
+	background-image: url(img/cat.png);
+	background-repeat: no-repeat;
+	background-size: cover;
+	width: 390px;
+	height: 410px;
+	margin-right: 45px;
+	box-sizing: border-box;
+	display: inline-block;
+	vertical-align: top;
+}
+
+
+.about-me{
+	display: inline-block;
+	vertical-align: top;
+	width: 640px;
+
+}
+
+
+.description{
+	padding-top: 25px;
+	padding-bottom: 15px;
+	line-height: 30px;
+	font-size: 18px;
+	font-weight: bold;
+}
+
+.about-me .citation{
+	width: 645px;
+	background-color: #d1d1d1;
+	padding: 30px 25px 25px 25px;
+	font-style: italic;
+	font-size: 14px;
+	text-transform: capitalize;
+	line-height: 20px;
+	box-sizing: border-box;
+
+
+}
+
+.subscribe{
+    font-size: 14px;
+    text-align: right;
+    display: block;
+    padding-top: 20px;
+}
+
+.subscribe-profession{
+	font-weight: bold;
+	display: inline-block;
+
+}
+
+section .container{
+	padding-top: 0;
+}
+
+section .container .practice{
+	border-top: 1px solid #000;
+	border-bottom: 1px solid #000;
+	padding-top: 55px;
+	padding-bottom: 45px;
+}
+
+.practice .skills{
+	display: inline-block;
+	padding-right: 60px;
+
+}
+
+
+
+.practice .skills .grey-lines{
+	background-color: #d1d1d1;
+	font-style: italic;
+	height: 40px;
+	line-height: 40px;
+	margin-bottom: 10px;
+	padding-left: 10px;
+	font-size: 18px;
+	box-sizing: border-box;
+}
+
+#first-grey-line{
+	width: 400px;
+	margin-top: 25px;
+}
+
+#second-grey-line, #third-grey-line{
+	width: 500px;
+}
+
+#fourth-grey-line{
+	width: 400px;
+}
+
+#fifth-grey-line{
+	width: 300px;
+}
+
+
+
+.ruler-parts{
+	width: 100px;
+	height: 20px;
+	border-bottom: 1px solid #000;
+	border-right: 1px solid #000;
+	box-sizing: border-box;
+	display: inline-block;
+
+}
+
+.numbers{
+	padding-left: 5px;
+
+}
+
+.number{
+	width: 100px;
+	height: 20px;
+	display: inline-block;
+	text-align: right;
+}
+
+.activities{
+	display: inline-block;
+	width: 510px;
+	vertical-align: top;
+}
+
+.activities .activity-description li{
+	vertical-align: top;
+	padding-top: 20px;
+	padding-left: 10px;
+	line-height: 20px;
+	font-size: 20px;
+}
+
+.icon{
+	height: 160px;
+	width: 160px;
+	display: inline-block;
+	margin-right: 40px;
+	background-image: url(img/icon.jpg);
+	border-radius: 50%;
+	background-size: cover;
+	background-repeat: no-repeat;
+	margin-left: 50px;
+	padding-bottom: 10px;
+
+}
+
+.pre-footer .prefooter-description{
+	display: inline-block;
+	width: 820px;
+	vertical-align: top;
+	line-height: 20px;
+	font-size: 18px;
+}
+
+footer .container{
+	background-color: #000;
+	padding-bottom: 30px;
+	color: white;
+}
+
+.contacts, .networks{
+	display: inline-block;
+	padding-right: 60px;
+	vertical-align: top;
+
+}
+
+.networks a{
+	display: block;
+	line-height: 30px;
+	color: white;
+	font-size: 26px;
+}
+
+h4{
+	text-transform: uppercase;
+	font-weight: normal;
+	font-size: 40px;
+	padding-bottom: 20px;
+}
+
+.conect{
+	font-size: 26px;
+	line-height: 30px;
+}
+
+footer .circle{
+	display: inline-block;
+	width: 360px;
+	height: 360px;
+
+	margin-left: 60px;
+	background-image: radial-gradient(closest-side circle at center, white 70%, transparent 71%, transparent 80%, white 81%, white 90%, transparent 91%);
+}
+
+.circle-subscribe{
+	padding: 125px;
+	color: #000;
+	font-size: 38px;
+	
+}
+
+.footer-subscribe{
+	font-size: 26px;
+}
+
+.black-figure{
+	height: 0px;
+	width: 0px;
+	display: inline-block;
+	vertical-align: top;
+	border-left: 25px solid black;
+	border-bottom: 25px solid transparent;
+	border-right: 25px solid transparent;
+	border-top: 25px solid black;
+
+}
+
+
+h3{
+	height: 50px;
+	background-color: #000;
+	color: white;
+	display: inline-block;
+	line-height: 50px;
+	text-align: justify;
+	box-sizing: border-box;
+	vertical-align: top;
+	font-size: 25px;
+	padding-left: 10px;
+
+
+}
+
+.container{
+	width: 1280px;
+	padding: 45px 100px;
+	box-sizing: border-box;
+	background-color: #fff;
+	margin: 0 auto;
+}

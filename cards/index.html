@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Document</title>
+	<style>
+
+		.cards{
+			width: 1000px;
+			position: relative;
+			margin: 0 auto;
+			
+
+		}
+
+
+		.card{
+			height: 205px;
+			width: 155px;
+			background-image: url(img/card.jpg);
+			background-size: contain;
+			background-repeat: no-repeat;
+			display: inline-block;
+			
+		}
+
+
+		#centre{
+			position: absolute;
+			top: 295px;
+			left: 420px;
+			z-index: 5;
+		}
+
+		#left-down{
+			position: absolute;
+			top: 195px;
+			left: 305px;
+			z-index: 4;
+			
+		}
+
+		#right-down{
+			position: absolute;
+			top: 195px;
+			right: 305px;
+			z-index: 4;
+			
+		}
+
+		#left-top{
+			position: absolute;
+			top: 95px;
+			left: 195px;
+			z-index: 3;
+		}
+
+		#right-top{
+			position: absolute;
+			top: 95px;
+			right: 195px;
+			z-index: 3;
+		}
+
+
+
+
+
+	</style>
+</head>
+<body>
+	<div class="cards">
+	 <div  class="card" id="left-top"></div>
+	 <div class="card" id="left-down"></div>
+	 <div class="card" id="centre"></div>
+	 <div class="card" id="right-down"></div>
+	 <div class="card" id="right-top"></div>
+	</div> 
+</body>
+</html>

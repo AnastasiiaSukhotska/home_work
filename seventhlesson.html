@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Седьмое занятие</title>
+	<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+	<div class="container">
+		<header>
+			<div class="header-top">
+				<div class="logo1"></div>
+				<h1>Hey, it`s me!</h1>
+				<div class="logo2"></div>
+			</div>
+			<nav>
+				<a href="index.html">Главная</a>
+			    <a href="goals.html">Мои цели</a>
+			    <a href="layout.html">Мои макеты</a>
+			</nav>
+		</header>
+		<section>
+			<div class="information">
+				<aside class="left-bar">
+							<ul>
+						      <li><a href="firstlesson.html">Мое первое занятие</a></li>
+						      <li><a href="secondlesson.html">Мое второе занятие</a></li>
+						      <li><a href="thirdlesson.html">Мое третье занятие</a></li>
+						      <li><a href="fourthlesson.html">Мое четвертое занятие</a></li>
+						      <li><a href="fifthlesson.html">Мое пятое занятие</a></li>
+						      <li><a href="sixthlesson.html">Мое шестое занятие</a></li>
+						      <li><a href="seventhlesson.html">Мое седьмое занятие</a></li>
+						      <li><a href="eighthlesson.html">Мое восьмое занятие</a></li>
+						      <li><a href="ninethlesson.html">Мое девятое занятие</a></li>
+		                    </ul>
+						</aside>
+				        <main class="content">
+							<div class="img"></div>
+							 <h3>Подключение полей для заполнения</h3>
+				              <ol>
+				            	<li>Тэг form(парный)</li>
+				            	<li>далее указываем атрибут action="куда отправлять информацию" и method="get(незащищенный,отображаеться в адресной строке) post(защищенный(пароли, логины))"</li>
+					            <li>внутрь этого тэга вкладываеться тэг input</li>
+					            <li>input имеет атрибуты type(тип вводимой информации), name(имя), value(значение)</li>
+					            <li>type может принимать значение text, number, range,tel, email,checkbox, color, submit(кнопка для отправки формы), reset(кнопка очистки формы)</li>
+					            <li>вместо input может быть select name, size(количество вариантов отображающихся одновременно)), multiple(возможость выбора больше одного варианта)</li>
+					            <li>можно вложить внутрь optigroup(для формирования груп выбора), option(вариант для выбора)</li>
+					            <li>вместо type может быть textarea для ввода многострочного текста, меняет свой размер в зависимости от количества строк, что запретить менять размер в css нужно задать resize:none</li>
+					           </ol> 
+					           <table class="characteristic_css_font">
+								<thead>
+							      <tr>
+								     <th>Вид атрабута type</th>
+								     <th>Описание</th>
+								     <th>Дополнительные атрибуты</th>
+							      </tr>
+						        </thead>
+						        <tbody>
+						        	<tr>
+						        		<td>text</td>
+						        		<td>поле для ввода текста(фамилия, имя и т.д.)</td>
+						        		<td>placeholder(подсказка, исчезает, когда начинают вводить текст), disabled(блокирует доступ к элементу), readonly(только для чтения), requared(обязателен к заполнению)</td>
+
+						         	</tr>
+						         	<tr>
+						         		<td>password</td>
+						         		<td>для введения пароля</td>
+						         		<td>теже</td>
+						         	</tr>
+						         	<tr>
+						         		<td>email</td>
+						         		<td>для введения email(обязательно наличие @ при заполнении поля)</td>
+						         		<td>теже</td>
+						         	</tr>
+						         	<tr>
+						         		<td>radio</td>
+						         		<td>переключатель(если создать 2 с одинаковым name - выбрать можно только один</td>
+						         		<td>disabled(блокирует доступ к элементу), readonly(только для чтения), requared(обязателен к заполнению)</td>
+						         	</tr>
+						         	<tr>
+						         		<td>checkbox</td>
+						         		<td>флажок</td>
+						         		<td>disabled(блокирует доступ к элементу), requared(обязателен к заполнению)</td>
+						         	</tr>
+						         	<tr>
+						         		<td>range</td>
+						         		<td>диапазон</td>
+						         		<td>disabled(блокирует доступ к элементу), max/min(максимальное и минимальное значение) step(шаг продвижения), requared(обязателен к заполнению)</td>
+						         	</tr>
+						        </tbody>
+							 </table>
+				            </main>
+			</div>
+		</section>
+		<footer>AboutMe &copy;</footer>
+	</div>
+</body>
+</html>
