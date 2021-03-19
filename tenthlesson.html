@@ -3,7 +3,7 @@
 <head>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>Десятое занятие</title>
+	<title>Десятое и одинадцатое занятие</title>
 	<link rel="stylesheet" href="css/style.css">
 </head>
 <body>
@@ -33,7 +33,7 @@
 						      <li><a href="seventhlesson.html">Мое седьмое занятие</a></li>
 						      <li><a href="eighthlesson.html">Мое восьмое занятие</a></li>
 						      <li><a href="ninethlesson.html">Мое девятое занятие</a></li>
-						      <li><a href="tenthlesson.html">Мое десятое занятие</a></li>
+						      <li><a href="tenthlesson.html">Мое десятое и одинадцатое занятие</a></li>
 					        </ul>
 						</aside>
 				<main class="content">
@@ -121,6 +121,27 @@
 						         		<td>git log</td>
 						         		<td>отобразит список всех коммитов в ветке вместе с соответствующими сведениями</td>
 						         	</tr>
+						         	<tr>
+						         		<td>git clone</td>
+						         		<td>получение копии существующего Git-репозитория; клонирование репозитория осуществляется командой git clone (url )</td>
+						         	</tr>
+						         	<tr>
+						         		<td>git pull</td>
+						         		<td>это git fetch+git merge;команда добавляет имеющиеся на удаленном репозитории изменения в локальный репозиторий(могут быть конфликты!)</td>
+						         	</tr>
+						         	<tr>
+						         		<td>git fetch</td>
+						         		<td>загружает изменения из удаленного репозиория, но не обьеденяет их с локальным репозиторием</td>
+						         	</tr>
+						         	<tr>
+						         		<td>git revert</td>
+						         		<td>дает возможность откатить комит не удаляя их, а создавая новый, который отменит изменения и доведет репозиторий до состояни того комита id которого указано</td>
+						         	</tr>
+						         	<tr>
+						         		<td>git reset</td>
+						         		<td>если просто reset удаляет комиты до того комита, который мы задали, но не убирает изменения в файлеб что бы убрать изменения - git reset hard. использовать только до того как произвели push</td>
+						         	</tr>
+
 						        </tbody>
 							 </table>
 					
