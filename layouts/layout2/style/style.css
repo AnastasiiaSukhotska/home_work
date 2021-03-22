@@ -37,12 +37,23 @@ nav a{
 	text-decoration: none;
 	text-align: right;
 	color: #000;
+	transition-property: all;
+	transition-duration: 0.5s;
+	transition-timing-function: ease;
+	
 }
 
 nav a:hover{
 	border-bottom: 2px solid #000;
 	font-weight: bold;
 	padding-bottom: 0;
+	background-color: white;
+	transform: translate(-10px, 10px) scale(1.2);
+	padding-right: 0;
+	transition-property: all;
+	transition-duration: 0.5s;
+	transition-timing-function: ease;
+	text-shadow: 3px 3px 15px #737373;
 	
 }
 
@@ -75,8 +86,19 @@ h1{
 	box-sizing: border-box;
 	display: inline-block;
 	vertical-align: top;
+	transition-property: all;
+	transition-duration: 1s;
+	transition-timing-function: ease;
 }
 
+
+.main-img:hover{
+	transform: scale(1.2);
+	transition-property: all;
+	transition-duration: 1s;
+	transition-timing-function: ease;
+
+}
 
 .about-me{
 	display: inline-block;
@@ -150,23 +172,85 @@ section .container .practice{
 	box-sizing: border-box;
 }
 
+
+@keyframes grey_line_animation-first-and-fourth{
+	from{
+		width: 0;
+		background-color: white;
+	}
+
+	to{
+		width: 400px;
+	}
+
+}
+
 #first-grey-line{
-	width: 400px;
 	margin-top: 25px;
+	animation-name: grey_line_animation-first-and-fourth;
+	animation-duration: 2s;
+	animation-iteration-count: 1;
+	animation-timing-function: linear;
+	animation-direction: normal;
+	animation-fill-mode: both ;
+	animation-delay: 4s;
 }
 
 #second-grey-line, #third-grey-line{
-	width: 500px;
+	animation-name: grey_line_animation-second-and-third;
+	animation-duration: 2s;
+	animation-iteration-count: 1;
+	animation-timing-function: linear;
+	animation-direction: normal;
+	animation-fill-mode: both ;
+	animation-delay: 4s;
+}
+
+
+
+@keyframes grey_line_animation-second-and-third{
+	from{
+		width: 0;
+		background-color: white;
+	}
+
+	to{
+		width: 500px;
+	}
+
 }
 
 #fourth-grey-line{
-	width: 400px;
+	animation-name: grey_line_animation-first-and-fourth;
+	animation-duration: 2s;
+	animation-iteration-count: 1;
+	animation-timing-function: linear;
+	animation-direction: normal;
+	animation-fill-mode: both ;
+	animation-delay: 4s;
 }
 
 #fifth-grey-line{
-	width: 300px;
+	animation-name: grey_line_animation-fifth;
+	animation-duration: 2s;
+	animation-iteration-count: 1;
+	animation-timing-function: linear;
+	animation-direction: normal;
+	animation-fill-mode: both ;
+	animation-delay: 4s;
 }
 
+@keyframes grey_line_animation-fifth{
+	from{
+		width: 0;
+		background-color: white;
+	}
+
+	to{
+		width: 300px;
+	}
+
+}
 
 
 .ruler-parts{
@@ -216,7 +300,17 @@ section .container .practice{
 	background-repeat: no-repeat;
 	margin-left: 50px;
 	padding-bottom: 10px;
+	transition-property: all;
+	transition-duration: 0.5s;
+	transition-timing-function: ease;
 
+}
+
+.icon:hover{
+	transform: scale(1.2);
+	transition-property: all;
+	transition-duration: 0.5s;
+	transition-timing-function: ease;
 }
 
 .pre-footer .prefooter-description{
@@ -245,7 +339,21 @@ footer .container{
 	line-height: 30px;
 	color: white;
 	font-size: 26px;
+	transition-property: all;
+	transition-duration: 0.5s;
+	transition-timing-function: ease;
+
 }
+
+.networks a:hover{
+	transform: scale(1.2);
+	transition-property: all;
+	transition-duration: 0.5s;
+	transition-timing-function: ease;
+	text-shadow: 3px 3px 15px white;
+}
+
+
 
 h4{
 	text-transform: uppercase;
@@ -307,6 +415,11 @@ h3{
 
 }
 
+
+
+
+
+
 .container{
 	width: 1280px;
 	padding: 45px 100px;
@@ -314,3 +427,6 @@ h3{
 	background-color: #fff;
 	margin: 0 auto;
 }
+
+
+

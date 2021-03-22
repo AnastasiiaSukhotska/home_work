@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Document</title>
+</head>
+	<style>
+
+		body{
+			background-color: #ccc;
+
+		}
+
+
+
+
+
+		.circle{
+			width: 50px;
+			height: 50px;
+			border-radius: 50%;
+			margin-right: 25px;
+			background-color: #fff;
+			display: inline-block;
+			box-sizing: border-box;
+
+			
+		}
+
+
+		#circle1{
+			animation-name: circle_1_animation;
+			animation-duration: 3s;
+			animation-iteration-count: infinite;
+			animation-timing-function: ease;
+			animation-direction: normal;
+			animation-fill-mode: both;
+
+		}
+
+
+				@keyframes circle_1_animation{
+			1%{ transform: translateX(0);
+
+			}
+
+
+			25%{ 
+				transform: translateX(75px);
+
+			}
+
+			50%{
+                transform: translateX(150px);
+
+			}
+
+			75%{
+                transform: translateX(225px) scale(0.1);
+
+			}
+		}
+
+
+
+
+		#circle2{
+			animation-name: circle_2_animation;
+			animation-duration: 3s;
+			animation-iteration-count: infinite;
+			animation-timing-function: ease;
+			animation-direction: ease;
+			animation-fill-mode: both;
+
+		}
+
+
+
+				@keyframes circle_2_animation{
+			1%{ transform: translateX(0);
+
+			}
+
+
+			25%{ 
+				transform: translateX(75px);
+
+			}
+
+			50%{
+                transform: translateX(150px) scale(0.1);
+
+			}
+
+			75%{
+                transform: translateX(-75px);
+
+			}
+		}
+
+		#circle3{
+			animation-name: circle_3_animation;
+			animation-duration: 3s;
+			animation-iteration-count: infinite;
+			animation-timing-function: ease;
+			animation-direction: normal;
+			animation-fill-mode: both;
+
+		}
+
+
+
+				@keyframes circle_3_animation{
+			1%{ transform: translateX(0);
+
+			}
+
+
+			25%{ 
+				transform: translateX(75px) scale(0.1);
+
+			}
+
+			50%{
+                transform: translateX(-150px);
+
+			}
+
+			75%{
+                transform: translateX(-75px);
+
+			}
+		}
+
+
+
+
+		#circle4{
+			animation-name: circle_4_animation;
+			animation-duration: 3s;
+			animation-iteration-count: infinite;
+			animation-timing-function: ease;
+			animation-direction: normal;
+			animation-fill-mode: both;
+
+		}
+
+
+
+				@keyframes circle_4_animation{
+			1%{ transform: translateX(0) scale(0.1);
+
+			}
+
+
+			25%{ 
+				transform: translateX(-225px) ;
+
+			}
+
+			50%{
+                transform: translateX(-150px);
+
+			}
+
+			75%{
+                transform: translateX(-75px);
+
+			}
+		}
+
+
+		.preloader{
+			height: 300px;
+			width: 500px;
+			margin: 300px auto;
+		}
+
+
+
+
+
+	</style>
+
+
+
+<body>
+	<div class="preloader">
+		<div class="circle" id="circle1"></div>
+		<div class="circle" id="circle2"></div>
+		<div class="circle" id="circle3"></div>
+		<div class="circle" id="circle4"></div>
+
+	</div>	
+</body>
+</html>

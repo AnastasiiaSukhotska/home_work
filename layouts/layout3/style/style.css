@@ -301,6 +301,7 @@ input[type="submit"]{
 	padding-right: 10px;
 	box-sizing: border-box;
 	display: inline-block;
+	border: none;
 	
 
 }

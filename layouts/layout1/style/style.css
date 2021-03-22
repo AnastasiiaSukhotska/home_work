@@ -34,9 +34,6 @@ header nav a{
     text-decoration: none;
 
 }
-header nav a.active{
-	background-color: #ff3f40;
-}
 
 .present{
 	text-align: justify;
@@ -226,8 +223,15 @@ header nav a.active{
 	text-transform: uppercase;
 }
 
-.feature-products .container a.active{
-	color: #ff3f40;
+.feature-products nav a:hover{
+    color: #ff3f40; 
+    transform: none;
+	transition-property: all;
+	transition-duration: 0.2s;
+	transition-timing-function: linear;
+	transition-delay: 0.2s;
+	
+	text-shadow: 2px 2px 7px #737373;
 }
 
 .images{
@@ -243,6 +247,23 @@ header nav a.active{
 	background-color: #f5f0dd;
 	display: inline-block;
 	margin-bottom: 20px;
+	transition-property: all;
+	transition-duration: 1s;
+	transition-timing-function: linear;
+}
+
+.image:hover, .image-last:hover{
+	transform: scale(1.5) translateX(20px);
+	transition-property: all;
+	transition-duration: 1s;
+	transition-timing-function: linear;
+	transition-delay: 1s;
+	
+
+}
+
+.image-last:hover{
+	transform: scale(1.5) translateX(-20px);
 }
 
 .image{
@@ -285,6 +306,17 @@ header nav a.active{
 	width: 320px;
 	background-color: #f5f0dd;
 	margin: 70px 70px 0 0;
+	transition-property: all;
+	transition-duration: 1s;
+	transition-timing-function: linear;
+}
+
+.main-photo:hover{
+	transform: scale(1.5) translateX(20px);
+	transition-property: all;
+	transition-duration: 1s;
+	transition-timing-function: linear;
+	transition-delay: 1s;
 }
 
 .mark-waug{
@@ -324,6 +356,22 @@ header nav a.active{
 	width: 200px;
 	background-color: #f5f0dd;
 	display: inline-block;
+	transition-property: all;
+	transition-duration: 1s;
+	transition-timing-function: linear;
+}
+
+.other-photo:hover, .last-other-photo:hover{
+	transform: scale(1.5) translateX(20px);
+	transition-property: all;
+	transition-duration: 1s;
+	transition-timing-function: linear;
+	transition-delay: 1s;
+}
+
+
+.last-other-photo:hover{
+	transform: scale(1.5) translateX(-20px);
 }
 
 .other-photo{
@@ -379,11 +427,9 @@ header nav a.active{
 	height: 80px;
 	border-radius: 6px;
 	display: inline-block;
-	background-color: #ff3f40;
 	margin-right: 170px;
 	border: none;
 	text-transform: uppercase;
-	color: white;
 	font-size: 18px;
 	font-weight: bold;
 }
@@ -455,16 +501,42 @@ header nav a.active{
 .send{
 	height: 70px;
 	width: 735px;
-	background-color: #ff3f40;
 	border-radius: 6px;
 	display: inline-block;
 	margin-top: 45px;
 	border: none;
 	text-transform: uppercase;
-	color: white;
 	font-size: 18px;
 	font-weight: bold;
 }
+
+
+.send, .button-area{
+	transition-property: all;
+	transition-duration: 0.2s;
+	transition-timing-function: linear;
+	transition-delay: 0.2s;
+	border: 2px solid #ff3f40;
+	color: #ff3f40;
+
+
+}
+
+.send:hover, .button-area:hover{
+	transition-property: all;
+	transition-duration: 0.2s;
+	transition-timing-function: linear;
+	transition-delay: 0.2s;
+	background-color: #ff3f40;
+	color: white;
+	text-shadow: 2px 2px 7px #f5f0dd;
+	box-shadow: 3px 3px 30px #737373;
+
+
+
+}
+
+
 
 
 
@@ -583,11 +655,19 @@ footer .container{
 	display: inline-block;
 	font-weight: bold;
 
+
 }
 
 .button:hover{
 	background-color: #ff3f40;
 	color: white;
+	box-shadow
+	transition-property: all;
+	transition-duration: 0.2s;
+	transition-timing-function: linear;
+	transition-delay: 0.2s;
+	box-shadow: 3px 3px 30px #737373;
+	
 }
 
 .red-line{
@@ -603,6 +683,31 @@ footer .container{
 	display: inline-block;
 
 }
+
+a:hover{
+
+	transition-property: all;
+	transition-duration: 0.2s;
+	transition-timing-function: linear;
+	transition-delay: 0.2s;
+	
+	text-shadow: 3px 3px 15px #737373;
+
+}
+
+
+header nav a:hover{
+	background-color: #ff3f40;
+}
+
+a{
+	transition-property: all;
+	transition-duration: 0.2s;
+	transition-timing-function: linear;
+	transition-delay: 0.2s;
+}
+
+
 
 
 
