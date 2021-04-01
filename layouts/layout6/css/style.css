@@ -37,8 +37,7 @@
 
 header .container{
 	background-color: transparent;
-	z-index: 2;
-
+	
 }
 
 header h2{
@@ -90,7 +89,7 @@ header .header-img{
 	position: absolute;
 	top: 200px;
 	left: 240px;
-	z-index: 2;
+	z-index: 3;
 }
 
 
@@ -143,11 +142,11 @@ header .title h3{
 
 
 main{
-	z-index: 5;
+	z-index: 2;
 }
 
 main ul{
-	padding-top: 65px;
+	padding-top: 70px;
 }
 
 
@@ -172,7 +171,7 @@ li:nth-of-type(2):hover{
 .icons{
 	padding-right: 40px;
 	padding-left: 40px;
-	padding-top: 5px;
+	padding-top: 35px;
 
 }
 
@@ -497,6 +496,6 @@ footer h2{
 	padding-right: 130px;
 	padding-left: 130px;
 	margin: 0 auto;
+	z-index: 3;
 	background-color: white;
-	z-index: 2;
 }	
