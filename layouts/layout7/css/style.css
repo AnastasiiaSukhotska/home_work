@@ -395,6 +395,15 @@ input[type='file']{
 	display: none;
 }
 
+.space{
+	height: 30px;
+}
+
+input:focus{
+	outline: 2px solid #d2d6de;
+}
+
+
 span{
 	padding: 10px;
 	line-height: 36px;
