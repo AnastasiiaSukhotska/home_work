@@ -1,0 +1,135 @@
+*{
+	padding: 0;
+	margin: 0;
+	color: #efefef;
+
+}
+
+header{
+	background-image: url(img/banner-bgi.jpg);
+	width: 100%;
+	background-size: cover;
+	position: relative;
+	
+
+}
+
+
+
+section{
+	width: 100%;
+}
+
+header::after{
+	position: absolute;
+	top: 0;
+	bottom: 0;
+	right: 0;
+	left: 0;
+	background-color: rgba(77, 91, 110, 0.9);
+	width: 100%;
+	z-index: 2;
+	content: '';
+}
+
+.container-fluid{
+	position: relative;
+	z-index: 3;
+
+}
+
+
+
+.bth-subscribe button{
+	background-color: rgb(77, 91, 110);
+	border: none;
+}
+
+h2, h4, h3{
+	color: #37414e;
+}
+
+ tr.first-head, .first-btn{
+	background-color: #4b596c;
+}
+
+tr.second-head, .second-btn{
+	background-color: #58ad52;
+}
+
+tr.third-head, .third-btn{
+	background-color: #52a1ad;
+}
+
+
+section.carusel{
+	background-color: #52ad81;
+}
+
+
+table.first-table, h3.video-capture{
+	background-color: #e9eef3;
+	
+
+}
+
+
+table.first-table td, table.second-table td, table.third-table td{
+	color: #37414e;
+}
+
+
+table.second-table{
+	background-color: #deebde;
+	
+}
+
+table.third-table{
+	background-color: #dee9ec;
+	
+}
+
+textarea#Textarea{
+	resize: none;
+}
+
+section.prefooter{
+	background-color: #2d3136;
+}
+
+
+label.form-label::after{
+	content: '*'
+	color: #be393b;
+	position: absolute;
+	left: 100%;
+}
+
+.form-control{
+	border: 1 solid #4c4f53;
+}
+
+input.form-control:focus{
+	border: 1 solid red;
+}
+
+footer{
+	height: 100px;
+	background-color: #2a2d33;
+}
+
+/*
+@media screen and (max-width: 992px){
+   div.fs-5.text-black-50{
+   	width: 100%;
+   }
+
+
+   div.col-lg-1.pt-3{
+   	display: flex;
+   	flex-direction: row;
+   	flex-wrap: wrap-reverse;
+   }
+
+
+}
