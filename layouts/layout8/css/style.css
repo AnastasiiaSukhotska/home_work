@@ -38,16 +38,20 @@ header::after{
 
 }
 
-
+.video-content{
+	height: 500px;
+}
 
 .bth-subscribe button{
 	background-color: rgb(77, 91, 110);
 	border: none;
 }
 
-h2, h4, h3{
+h2, h4, h3.video-capture{
 	color: #37414e;
 }
+
+
 
  tr.first-head, .first-btn{
 	background-color: #4b596c;
