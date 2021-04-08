@@ -122,6 +122,16 @@ footer{
 	background-color: #2a2d33;
 }
 
+
+label::after{
+	content: '*';
+	width: 20px;
+	height: 20px;
+	color: #be393b;
+	position: absolute;
+	right: 50%;
+}
+
 /*
 @media screen and (max-width: 992px){
    div.fs-5.text-black-50{
