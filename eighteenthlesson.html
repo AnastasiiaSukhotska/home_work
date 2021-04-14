@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Восемнадцатое занятие</title>
+	<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+	<div class="container">
+		<header>
+			<div class="header-top">
+				<div class="logo1"></div>
+				<h1>Hey, it`s me!</h1>
+				<div class="logo2"></div>
+			</div>
+			<nav>
+				<a href="index.html">Главная</a>
+			    <a href="goals.html">Мои цели</a>
+			    <a href="layout.html">Мои макеты</a>
+			</nav>
+		</header>
+		<section>
+			<div class="information">
+				<aside class="left-bar">
+							<ul>
+						      <li><a href="firstlesson.html">Мое первое занятие</a></li>
+						      <li><a href="secondlesson.html">Мое второе занятие</a></li>
+						      <li><a href="thirdlesson.html">Мое третье занятие</a></li>
+						      <li><a href="fourthlesson.html">Мое четвертое занятие</a></li>
+						      <li><a href="fifthlesson.html">Мое пятое занятие</a></li>
+						      <li><a href="sixthlesson.html">Мое шестое занятие</a></li>
+						      <li><a href="seventhlesson.html">Мое седьмое занятие</a></li>
+						      <li><a href="eighthlesson.html">Мое восьмое занятие</a></li>
+						      <li><a href="ninethlesson.html">Мое девятое занятие</a></li>
+						      <li><a href="tenthlesson.html">Мое десятое и одинадцатое занятие</a></li>
+						      <li><a href="eleventhlesson.html">Мое двенадцатое занятие</a></li>
+						      <li><a href="thirteenthlesson.html">Мое тринадцатое занятие</a></li>
+						      <li><a href="fourteenthlesson.html">Мое четырнадцатое занятие</a></li>
+						      <li><a href="fifteenth.html">Мое пятнадцатое занятие</a></li>
+						      <li><a href="eighteenthlesson.html">Мое восемнадцатое занятие</a></li>
+					        </ul>
+						</aside>
+				<main class="content">
+							<div class="img"></div>
+							<table class="characteristic_css_font">
+								<thead>
+							      <tr>
+								     <th>Команда</th>
+								     <th>Действие</th>
+							      </tr>
+						        </thead>
+						        <tbody>
+						        	<tr>
+						        		<td>npm i -g 'название плагина'</td>
+						        		<td>команда для установки плагинов глобально(в систему,  не в отдельный проэкт)</td>
+						        
+						         	</tr>
+						         	<tr>
+						         		<td>npm i -g gulp-cli</td>
+						         		<td>установка командной строки gulp</td>
+						         
+						         	</tr>
+						    
+						         	<tr>
+						         		<td>npm init</td>
+						         		<td>команда выполняеться один раз в папке проэкта для его инициализации. при ввеении команды консоль задает вопросы: имя проэктаб, версию, описание, точку входа, тестовую команду и ссылку на нид репозиторий и ключевые слова, автор, лицензию и все эти операции генерируют файл package.json и там их можно потом изменить</td>
+						         		
+						         	</tr>
+						         	<tr>
+					                	<td>npm i plugin-name --save-dev </td>
+						         		<td>установка плагина конкретно в проэкт и сохранения таким образом, что при закачке с git смогут подтянуться все установленые плагтны без их новой устаовки через команду npm instal, все установленные библиотеки сохраняються в файле package.json</td>
+						         		
+						         	</tr>
+						         	<tr>
+						         		<td>npm i gulp --save-dev </td>
+						         		<td>установка в проєкт самого gulp</td>
+						         	</tr>
+						         	<tr>
+						         		<td>создать файл в проэкте с именем gulpfile.js </td>
+						         		<td>в этом файле пишем команды для gulp</td>
+						         	</tr>
+						         	<tr>
+						         		<td>'var имя переменной = require("имя модуля")</td>
+						         		<td>в файле gulpfile.js создаем переменную для каждого модуля</td>
+						         	</tr>
+						         	<tr>
+						         		<td>gulp.task('task-name', (если задача кастомная-здесь необходимо задать финишь и указать эту же функцию в конце)=>{что нужно делать})</td>
+						         		<td>создание задачи для gulp</td>
+						         	</tr>
+						         	<tr>
+						         		<td>gulp.task('task-name', gulp.series("имя задачи1", "имя задачи2"))</td>
+						         		<td>запуск выполнения серии других задач по очереди</td>
+						         	</tr>
+						         	<tr>
+						         		<td>gulp.task('task-name', gulp.parallel("имя задачи1", "имя задачи2"))</td>
+						         		<td>задачи выполняються паралельно
+                                        </td>
+						         	</tr>
+						         	<tr>
+						         		<td>return gulp.src("src/**/*.html")(пут окуда копировать) <br>
+						         		.pipe(gulp.dest("dest/."))(куда копировать;dest-имя создаваемой папки(может быть любое))</td>
+						         		<td>копирует файлы из одной папки в другую</td>
+						         	</tr>
+						         	<tr>
+
+						         	
+						         		<td>npm i gulp-less --save-dev</td>
+						         		<td>установка пакета less</td>
+						         	</tr>
+						         	<tr>
+						         		<td>
+ 
+                                       gulp.task('less', ()=> { <br>
+                                       return gulp.src('./less/**/*.less')
+                                       .pipe(less())
+                                        .pipe(gulp.dest("dest/styles/."));
+                                        });</td>
+						         		<td>задача для кампиляции файлоа less</td>
+						         	</tr>
+						         	<tr>
+						         		<td>gulp.watch("src/**/*.html", gulp.series(название задачи,которую надо запустить))</td>
+						         		<td>наблюдение за измнениями фйлов и при этих изменениях запуск необходимых задач</td>
+						         	</tr>
+						         	<tr>
+						         		<td>npm i browser-sync</td>
+						         		<td>установка пакета для синхронизации с браузерами</td>
+						         	</tr>
+						         	<tr>
+						         		<td>gulp.task('browserSync', ()=> {
+                                        browserSync.init({
+                                       server: {
+                                        baseDir: 'dest/.'
+                                           },
+                                           })
+                                         })</td>
+						         		<td>обновление браузера при обновлениях в документах</td>
+						         	</tr>
+						         	<tr>
+						         		<td>npm i --save-dev postcss</td>
+						         		<td>для работы плагинов postcss</td>
+						         	</tr>
+						         	<tr>
+						         		<td>npm i --save-dev gulp-postcss</td>
+						         		<td>для работы плагинов postcss</td>
+						         	</tr>
+						         	<tr>
+						         		<td>npm i --save-dev cssnano</td>
+						         		<td>плагин для того что бы убрать пробелы и записывать код в одну строку для того что бы уменьшить вес выходного файла.</td>
+						         	</tr>
+						         	<tr>
+						         		<td>
+						         			npm i --save-dev autoprefixer
+						         		</td>
+						         		<td>добавляет префиксы, что читалось более старыми версиями браузеров(для его работы необходимо добавить конфигурацию в package.json '"browserlist' "development")</td>
+						         	</tr>
+                                    <tr>
+						         		<td>npm i gulp-clean</td>
+						         		<td>плагин для очистки папок</td>
+						         	</tr>
+						         
+
+
+						        </tbody>
+							 </table>
+					<ol>
+						<li>в файл .gitignore добавляем папки node_modules, dest, package-lock.json</li>
+						<li>для исользования cssnano можно добавить все его плагины в переменную
+						<ul><li>var postcssPlugins = {
+							autoprefix(),
+							cssnano()
+						}</li> 
+						</ul>
+						</li>
+						<li>затем добавить pipe(postcss(postcssPlugins)) к return</li>
+						затем можно подключить еще задать var rename = require("gulp-rename") и добавить pipe(rename({.min})) для добавления суфикса к минифицированому файлу
+					</ol>
+					<p class="nb">NB! Команда, которая выполняеться по умолчанию,должна носить имя default</p>
+		
+			 </main>
+			</div>
+		</section>
+		<footer>AboutMe &copy;</footer>
+	</div>
+</body>
+</html>

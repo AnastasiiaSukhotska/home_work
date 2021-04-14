@@ -132,6 +132,10 @@ label::after{
 	right: 50%;
 }
 
+input:focus{
+	outline: 1px solid red !important;
+}
+
 /*
 @media screen and (max-width: 992px){
    div.fs-5.text-black-50{
