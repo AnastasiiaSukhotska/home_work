@@ -834,4 +834,30 @@ textarea{
 	background-repeat: no-repeat;
 	background-size: contain;
 }
+
+
+.carousel-caption .btn-more{
+	background-color: white;
+	color: #c0392b;
+	font-size: 16px;
+	margin-left: 170px;
+	transition-property: all;
+    transition-duration: 0.5s;
+    transition-timing-function: linear;
+    transition-delay: 0.2s;
+	
+}
+
+.carousel-caption .btn-more:hover{
+	background-color: #c0392b;
+	color: white;
+	font-size: 16px;
+	transition-property: all;
+    transition-duration: 0.5s;
+    transition-timing-function: linear;
+    transition-delay: 0.2s;
+}
+
+
+
 }
