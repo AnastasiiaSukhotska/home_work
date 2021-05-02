@@ -120,7 +120,7 @@ input[type="search"]:focus{
 }
 
 
-.links-line__link_search:hover{
+.links-line__link_search:hover, .vbv.links-line__link_search:hover{
 	background-image: url(../img/search-icon-active.png);
 	transition-property: all;
     transition-duration: 0.2s;
@@ -241,11 +241,19 @@ top: 30px;
 left: 90%;
 }
 
+.btn-collapse.vbv{
+	width: 50px;
+	height: 52px;
+	background-image: url(../img/search-icon.png);
+	background-repeat: no-repeat;
+	background-size: cover;
+	border: none;
+}
 
 .carousel-control-prev{
 	position: absolute;
 	top: 70%;
-	left: 35%;
+	left: 40%;
 	opacity: 1;
 
 
@@ -254,9 +262,47 @@ left: 90%;
 .carousel-control-next{
 	position: absolute;
 	top: 70%;
-	right: 40%;
+	right: 38%;
 	opacity: 1;
 }
+
+.carousel-control-prev-icon:hover, .carousel-control-next-icon:hover{
+	background-color: #c0392b;
+	transition-property: all;
+    transition-duration: 0.2s;
+    transition-timing-function: linear;
+    transition-delay: 0.2s;
+
+}
+
+.carousel-control-prev-icon:hover{
+	background-image: url(../img/pointer-white-left.png);
+}
+
+.carousel-control-next-icon:hover{
+	background-image: url(../img/pointer-white-right.png);
+}
+
+
+@media screen and (max-width: 900px){
+
+.carousel-control-prev{
+	position: absolute;
+	top: 70%;
+	left: 38%;
+	opacity: 1;
+
+
+}
+
+.carousel-control-next{
+	position: absolute;
+	top: 70%;
+	right: 38%;
+	opacity: 1;
+}
+}	
+
 
 .carousel-control-prev-icon{
 	background-image: url(../img/pointer-black-left.png);
@@ -418,13 +464,26 @@ left: 90%;
 
 .carousel-control-prev{
 	top: 70%;
-	left: 30%;
+	left: 35%;
 	opacity: 1;
 
 
 }
 
 }
+
+@media screen and (max-width: 500px){
+	.carousel-control-prev{
+	left: 35%;
+
+
+}
+
+.carousel-control-next{
+		right: 35%;
+	}
+
+	}
 
 
 @media screen and (max-width: 399px){
@@ -449,16 +508,7 @@ left: 90%;
 
 }
 
-.carousel-control-prev{
-	left: 25%;
 
-
-}
-
-.carousel-control-next{
-		right: 25%;
-	}
-}
 
 .carusel-img{
 	max-height: 800px;
@@ -472,7 +522,7 @@ left: 90%;
 	right: 9%;
 
 }
-
+}
 
 @media screen and (max-width: 1000px){
 
