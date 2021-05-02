@@ -248,6 +248,7 @@ left: 90%;
 	background-repeat: no-repeat;
 	background-size: cover;
 	border: none;
+	padding: .25rem .75rem;
 }
 
 .carousel-control-prev{
